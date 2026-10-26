@@ -1,0 +1,242 @@
+[
+  {
+    "id": "train-01",
+    "text": "a wonderful movie with excellent acting",
+    "label": 1
+  },
+  {
+    "id": "train-02",
+    "text": "a great story and a beautiful ending",
+    "label": 1
+  },
+  {
+    "id": "train-03",
+    "text": "I love this delightful film",
+    "label": 1
+  },
+  {
+    "id": "train-04",
+    "text": "an excellent performance by the cast",
+    "label": 1
+  },
+  {
+    "id": "train-05",
+    "text": "a brilliant and enjoyable experience",
+    "label": 1
+  },
+  {
+    "id": "train-06",
+    "text": "the movie was good and inspiring",
+    "label": 1
+  },
+  {
+    "id": "train-07",
+    "text": "a charming story with wonderful characters",
+    "label": 1
+  },
+  {
+    "id": "train-08",
+    "text": "an amazing film that I love",
+    "label": 1
+  },
+  {
+    "id": "train-09",
+    "text": "excellent direction and great music",
+    "label": 1
+  },
+  {
+    "id": "train-10",
+    "text": "a delightful and touching story",
+    "label": 1
+  },
+  {
+    "id": "train-11",
+    "text": "the actors were brilliant and engaging",
+    "label": 1
+  },
+  {
+    "id": "train-12",
+    "text": "a wonderful and entertaining movie",
+    "label": 1
+  },
+  {
+    "id": "train-13",
+    "text": "good writing and beautiful photography",
+    "label": 1
+  },
+  {
+    "id": "train-14",
+    "text": "an enjoyable film with a great ending",
+    "label": 1
+  },
+  {
+    "id": "train-15",
+    "text": "I love the amazing performances",
+    "label": 1
+  },
+  {
+    "id": "train-16",
+    "text": "a fantastic story and excellent cast",
+    "label": 1
+  },
+  {
+    "id": "train-17",
+    "text": "this beautiful movie is worth watching",
+    "label": 1
+  },
+  {
+    "id": "train-18",
+    "text": "a good film with charming characters",
+    "label": 1
+  },
+  {
+    "id": "train-19",
+    "text": "wonderful music and brilliant direction",
+    "label": 1
+  },
+  {
+    "id": "train-20",
+    "text": "a delightful film with fantastic acting",
+    "label": 1
+  },
+  {
+    "id": "train-21",
+    "text": "great performances in an inspiring story",
+    "label": 1
+  },
+  {
+    "id": "train-22",
+    "text": "a touching and enjoyable movie",
+    "label": 1
+  },
+  {
+    "id": "train-23",
+    "text": "excellent writing makes this film amazing",
+    "label": 1
+  },
+  {
+    "id": "train-24",
+    "text": "a beautiful and entertaining experience",
+    "label": 1
+  },
+  {
+    "id": "train-25",
+    "text": "a terrible movie with awful acting",
+    "label": 0
+  },
+  {
+    "id": "train-26",
+    "text": "a boring story and a disappointing ending",
+    "label": 0
+  },
+  {
+    "id": "train-27",
+    "text": "I hate this dreadful film",
+    "label": 0
+  },
+  {
+    "id": "train-28",
+    "text": "an awful performance by the cast",
+    "label": 0
+  },
+  {
+    "id": "train-29",
+    "text": "a dull and unpleasant experience",
+    "label": 0
+  },
+  {
+    "id": "train-30",
+    "text": "the movie was bad and confusing",
+    "label": 0
+  },
+  {
+    "id": "train-31",
+    "text": "a tedious story with terrible characters",
+    "label": 0
+  },
+  {
+    "id": "train-32",
+    "text": "a horrible film that I hate",
+    "label": 0
+  },
+  {
+    "id": "train-33",
+    "text": "awful direction and boring music",
+    "label": 0
+  },
+  {
+    "id": "train-34",
+    "text": "a dreadful and pointless story",
+    "label": 0
+  },
+  {
+    "id": "train-35",
+    "text": "the actors were dull and unconvincing",
+    "label": 0
+  },
+  {
+    "id": "train-36",
+    "text": "a terrible and boring movie",
+    "label": 0
+  },
+  {
+    "id": "train-37",
+    "text": "bad writing and ugly photography",
+    "label": 0
+  },
+  {
+    "id": "train-38",
+    "text": "an unpleasant film with a disappointing ending",
+    "label": 0
+  },
+  {
+    "id": "train-39",
+    "text": "I hate the horrible performances",
+    "label": 0
+  },
+  {
+    "id": "train-40",
+    "text": "a frustrating story and awful cast",
+    "label": 0
+  },
+  {
+    "id": "train-41",
+    "text": "this ugly movie is a waste of time",
+    "label": 0
+  },
+  {
+    "id": "train-42",
+    "text": "a bad film with tedious characters",
+    "label": 0
+  },
+  {
+    "id": "train-43",
+    "text": "terrible music and dull direction",
+    "label": 0
+  },
+  {
+    "id": "train-44",
+    "text": "a dreadful film with frustrating acting",
+    "label": 0
+  },
+  {
+    "id": "train-45",
+    "text": "boring performances in a confusing story",
+    "label": 0
+  },
+  {
+    "id": "train-46",
+    "text": "a pointless and unpleasant movie",
+    "label": 0
+  },
+  {
+    "id": "train-47",
+    "text": "awful writing makes this film horrible",
+    "label": 0
+  },
+  {
+    "id": "train-48",
+    "text": "an ugly and boring experience",
+    "label": 0
+  }
+]

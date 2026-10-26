@@ -1,0 +1,39 @@
+{
+  "$defs": {
+    "JsonValue": {}
+  },
+  "additionalProperties": false,
+  "properties": {
+    "title": {
+      "maxLength": 200,
+      "minLength": 1,
+      "title": "Title",
+      "type": "string"
+    },
+    "manifest": {
+      "default": "experiment.json",
+      "title": "Manifest",
+      "type": "string"
+    },
+    "config": {
+      "default": "config.json",
+      "title": "Config",
+      "type": "string"
+    },
+    "allowed_updates": {
+      "additionalProperties": {
+        "items": {
+          "$ref": "#/$defs/JsonValue"
+        },
+        "type": "array"
+      },
+      "title": "Allowed Updates",
+      "type": "object"
+    }
+  },
+  "required": [
+    "title"
+  ],
+  "title": "TaskSpec",
+  "type": "object"
+}

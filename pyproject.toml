@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "papertrail-agent"
+version = "0.2.0"
+description = "Persistent, evidence-grounded execution and recovery for NLP experiments"
+readme = "README.md"
+license = "MIT"
+authors = [{name = "Yuke Zhang"}]
+requires-python = ">=3.11"
+dependencies = [
+  "langchain>=1.0,<2",
+  "langgraph>=1.0,<2",
+  "langchain-openai>=1.0,<2",
+  "pydantic>=2.7,<3",
+  "python-dotenv>=1.0,<2",
+  "streamlit>=1.40,<2",
+  "scikit-learn>=1.5,<2",
+  "langgraph-checkpoint-sqlite>=3,<4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.11,<1"]
+
+[project.urls]
+Repository = "https://github.com/yk52011/papertrail-agent"
+Issues = "https://github.com/yk52011/papertrail-agent/issues"
+
+[project.scripts]
+papertrail = "papertrail.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/papertrail"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

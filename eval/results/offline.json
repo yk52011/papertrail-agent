@@ -1,0 +1,174 @@
+{
+  "scope": "12 handcrafted English retrieval tasks; no LLM or real-repo claims",
+  "mode": "bm25",
+  "n": 12,
+  "baseline_top1": 0.16666666666666666,
+  "retrieval_top1": 1.0,
+  "retrieval_top3": 1.0,
+  "corrected_ids": [
+    "r01",
+    "r02",
+    "r03",
+    "r04",
+    "r07",
+    "r08",
+    "r09",
+    "r10",
+    "r11",
+    "r12"
+  ],
+  "corrupted_ids": [],
+  "net_gain_count": 10,
+  "samples": [
+    {
+      "id": "r01",
+      "expected": "environment.md",
+      "baseline": "checkpoints.md",
+      "retrieved": [
+        "environment.md:1-4",
+        "troubleshooting.md:1-4",
+        "evaluation.md:1-4"
+      ],
+      "baseline_correct": false,
+      "top1_correct": true,
+      "top3_correct": true
+    },
+    {
+      "id": "r02",
+      "expected": "environment.md",
+      "baseline": "checkpoints.md",
+      "retrieved": [
+        "environment.md:1-4",
+        "troubleshooting.md:1-4",
+        "checkpoints.md:1-4"
+      ],
+      "baseline_correct": false,
+      "top1_correct": true,
+      "top3_correct": true
+    },
+    {
+      "id": "r03",
+      "expected": "dataset.md",
+      "baseline": "checkpoints.md",
+      "retrieved": [
+        "dataset.md:1-4",
+        "evaluation.md:1-4",
+        "checkpoints.md:1-4"
+      ],
+      "baseline_correct": false,
+      "top1_correct": true,
+      "top3_correct": true
+    },
+    {
+      "id": "r04",
+      "expected": "dataset.md",
+      "baseline": "checkpoints.md",
+      "retrieved": [
+        "dataset.md:1-4",
+        "evaluation.md:1-4"
+      ],
+      "baseline_correct": false,
+      "top1_correct": true,
+      "top3_correct": true
+    },
+    {
+      "id": "r05",
+      "expected": "checkpoints.md",
+      "baseline": "checkpoints.md",
+      "retrieved": [
+        "checkpoints.md:1-4",
+        "troubleshooting.md:1-4",
+        "dataset.md:1-4"
+      ],
+      "baseline_correct": true,
+      "top1_correct": true,
+      "top3_correct": true
+    },
+    {
+      "id": "r06",
+      "expected": "checkpoints.md",
+      "baseline": "checkpoints.md",
+      "retrieved": [
+        "checkpoints.md:1-4",
+        "dataset.md:1-4",
+        "evaluation.md:1-4"
+      ],
+      "baseline_correct": true,
+      "top1_correct": true,
+      "top3_correct": true
+    },
+    {
+      "id": "r07",
+      "expected": "evaluation.md",
+      "baseline": "checkpoints.md",
+      "retrieved": [
+        "evaluation.md:1-4"
+      ],
+      "baseline_correct": false,
+      "top1_correct": true,
+      "top3_correct": true
+    },
+    {
+      "id": "r08",
+      "expected": "evaluation.md",
+      "baseline": "checkpoints.md",
+      "retrieved": [
+        "evaluation.md:1-4",
+        "dataset.md:1-4"
+      ],
+      "baseline_correct": false,
+      "top1_correct": true,
+      "top3_correct": true
+    },
+    {
+      "id": "r09",
+      "expected": "troubleshooting.md",
+      "baseline": "checkpoints.md",
+      "retrieved": [
+        "troubleshooting.md:1-4",
+        "evaluation.md:1-4",
+        "environment.md:1-4"
+      ],
+      "baseline_correct": false,
+      "top1_correct": true,
+      "top3_correct": true
+    },
+    {
+      "id": "r10",
+      "expected": "troubleshooting.md",
+      "baseline": "checkpoints.md",
+      "retrieved": [
+        "troubleshooting.md:1-4"
+      ],
+      "baseline_correct": false,
+      "top1_correct": true,
+      "top3_correct": true
+    },
+    {
+      "id": "r11",
+      "expected": "smoke.md",
+      "baseline": "checkpoints.md",
+      "retrieved": [
+        "smoke.md:1-4",
+        "troubleshooting.md:1-4",
+        "dataset.md:1-4"
+      ],
+      "baseline_correct": false,
+      "top1_correct": true,
+      "top3_correct": true
+    },
+    {
+      "id": "r12",
+      "expected": "smoke.md",
+      "baseline": "checkpoints.md",
+      "retrieved": [
+        "smoke.md:1-4",
+        "dataset.md:1-4",
+        "checkpoints.md:1-4"
+      ],
+      "baseline_correct": false,
+      "top1_correct": true,
+      "top3_correct": true
+    }
+  ]
+}

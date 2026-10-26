@@ -1,0 +1,12 @@
+{
+  "title": "Sentiment Lab · 修复数据路径与字段配置",
+  "manifest": "experiment.json",
+  "config": "config.json",
+  "allowed_updates": {
+    "train_path": ["data/train.json"],
+    "text_column": ["text"],
+    "min_df": [1],
+    "ngram_max": [2],
+    "write_results": [true]
+  }
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "test-01",
+    "text": "excellent acting in a delightful story",
+    "label": 1
+  },
+  {
+    "id": "test-02",
+    "text": "a wonderful and beautiful film",
+    "label": 1
+  },
+  {
+    "id": "test-03",
+    "text": "I love the brilliant direction",
+    "label": 1
+  },
+  {
+    "id": "test-04",
+    "text": "a great and inspiring movie",
+    "label": 1
+  },
+  {
+    "id": "test-05",
+    "text": "amazing music and charming characters",
+    "label": 1
+  },
+  {
+    "id": "test-06",
+    "text": "a fantastic and enjoyable film",
+    "label": 1
+  },
+  {
+    "id": "test-07",
+    "text": "good performances and a touching ending",
+    "label": 1
+  },
+  {
+    "id": "test-08",
+    "text": "a beautiful story with excellent writing",
+    "label": 1
+  },
+  {
+    "id": "test-09",
+    "text": "a delightful movie worth watching",
+    "label": 1
+  },
+  {
+    "id": "test-10",
+    "text": "wonderful acting and entertaining characters",
+    "label": 1
+  },
+  {
+    "id": "test-11",
+    "text": "awful acting in a dreadful story",
+    "label": 0
+  },
+  {
+    "id": "test-12",
+    "text": "a terrible and ugly film",
+    "label": 0
+  },
+  {
+    "id": "test-13",
+    "text": "I hate the dull direction",
+    "label": 0
+  },
+  {
+    "id": "test-14",
+    "text": "a boring and confusing movie",
+    "label": 0
+  },
+  {
+    "id": "test-15",
+    "text": "horrible music and tedious characters",
+    "label": 0
+  },
+  {
+    "id": "test-16",
+    "text": "a frustrating and unpleasant film",
+    "label": 0
+  },
+  {
+    "id": "test-17",
+    "text": "bad performances and a pointless ending",
+    "label": 0
+  },
+  {
+    "id": "test-18",
+    "text": "an ugly story with awful writing",
+    "label": 0
+  },
+  {
+    "id": "test-19",
+    "text": "a dreadful movie and a waste of time",
+    "label": 0
+  },
+  {
+    "id": "test-20",
+    "text": "terrible acting and unconvincing characters",
+    "label": 0
+  }
+]
