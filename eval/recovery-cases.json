@@ -1,0 +1,12 @@
+[
+  {"id":"c01", "name":"正常配置", "config":{}, "recoverable":true},
+  {"id":"c02", "name":"训练文件路径错误", "config":{"train_path":"data/missing.json"}, "recoverable":true},
+  {"id":"c03", "name":"文本字段错误", "config":{"text_column":"sentence"}, "recoverable":true},
+  {"id":"c04", "name":"非法 min_df", "config":{"min_df":0}, "recoverable":true},
+  {"id":"c05", "name":"非法 ngram 范围", "config":{"ngram_max":0}, "recoverable":true},
+  {"id":"c06", "name":"未写出指标产物", "config":{"write_results":false}, "recoverable":true},
+  {"id":"c07", "name":"路径和字段两次连续失败", "config":{"train_path":"data/missing.json", "text_column":"sentence"}, "recoverable":true},
+  {"id":"c08", "name":"恢复权限中没有正确路径", "config":{"train_path":"data/missing.json"}, "allowed_updates":{"text_column":["text"]}, "recoverable":false},
+  {"id":"c09", "name":"伪造高分但预测错误", "config":{}, "forge_metrics":true, "recoverable":false},
+  {"id":"c10", "name":"退出正常但仅有旧产物", "config":{}, "stale_artifact":true, "recoverable":false}
+]

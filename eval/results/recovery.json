@@ -1,0 +1,786 @@
+{
+  "scope": "10 handcrafted fault-injection cases, actual CPU subprocesses; not real-world reproduction performance or LLM evaluation",
+  "dataset": "48 handcrafted training / 20 test sentences",
+  "backend": "local",
+  "seconds": 84.962,
+  "summaries": [
+    {
+      "policy": "none",
+      "successes": 1,
+      "total": 10,
+      "false_successes": 0,
+      "corrected_ids": [],
+      "corrupted_ids": [],
+      "net_gain_count": 0,
+      "total_executions": 10
+    },
+    {
+      "policy": "retry",
+      "successes": 1,
+      "total": 10,
+      "false_successes": 0,
+      "corrected_ids": [],
+      "corrupted_ids": [],
+      "net_gain_count": 0,
+      "total_executions": 28
+    },
+    {
+      "policy": "rules",
+      "successes": 7,
+      "total": 10,
+      "false_successes": 0,
+      "corrected_ids": [
+        "c02",
+        "c03",
+        "c04",
+        "c05",
+        "c06",
+        "c07"
+      ],
+      "corrupted_ids": [],
+      "net_gain_count": 6,
+      "total_executions": 17
+    }
+  ],
+  "samples": [
+    {
+      "id": "c01",
+      "name": "正常配置",
+      "policy": "none",
+      "status": "succeeded",
+      "success": true,
+      "recoverable": true,
+      "attempts": 1,
+      "repairs": 0,
+      "model_calls": 0,
+      "execution_seconds": 13.704,
+      "verification": "threshold_met",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": []
+    },
+    {
+      "id": "c01",
+      "name": "正常配置",
+      "policy": "retry",
+      "status": "succeeded",
+      "success": true,
+      "recoverable": true,
+      "attempts": 1,
+      "repairs": 0,
+      "model_calls": 0,
+      "execution_seconds": 1.662,
+      "verification": "threshold_met",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": []
+    },
+    {
+      "id": "c01",
+      "name": "正常配置",
+      "policy": "rules",
+      "status": "succeeded",
+      "success": true,
+      "recoverable": true,
+      "attempts": 1,
+      "repairs": 0,
+      "model_calls": 0,
+      "execution_seconds": 1.712,
+      "verification": "threshold_met",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": []
+    },
+    {
+      "id": "c02",
+      "name": "训练文件路径错误",
+      "policy": "none",
+      "status": "failed",
+      "success": false,
+      "recoverable": true,
+      "attempts": 1,
+      "repairs": 0,
+      "model_calls": 0,
+      "execution_seconds": 1.552,
+      "verification": "execution_failed",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": []
+    },
+    {
+      "id": "c02",
+      "name": "训练文件路径错误",
+      "policy": "retry",
+      "status": "budget_exhausted",
+      "success": false,
+      "recoverable": true,
+      "attempts": 3,
+      "repairs": 0,
+      "model_calls": 0,
+      "execution_seconds": 4.646,
+      "verification": "execution_failed",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "execute",
+        "verify",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": []
+    },
+    {
+      "id": "c02",
+      "name": "训练文件路径错误",
+      "policy": "rules",
+      "status": "succeeded",
+      "success": true,
+      "recoverable": true,
+      "attempts": 2,
+      "repairs": 1,
+      "model_calls": 0,
+      "execution_seconds": 3.106,
+      "verification": "threshold_met",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "retrieve",
+        "diagnose",
+        "checkpoint",
+        "patch",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": [
+        [
+          {
+            "key": "train_path",
+            "before": "data/missing.json",
+            "after": "data/train.json"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "c03",
+      "name": "文本字段错误",
+      "policy": "none",
+      "status": "failed",
+      "success": false,
+      "recoverable": true,
+      "attempts": 1,
+      "repairs": 0,
+      "model_calls": 0,
+      "execution_seconds": 1.584,
+      "verification": "execution_failed",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": []
+    },
+    {
+      "id": "c03",
+      "name": "文本字段错误",
+      "policy": "retry",
+      "status": "budget_exhausted",
+      "success": false,
+      "recoverable": true,
+      "attempts": 3,
+      "repairs": 0,
+      "model_calls": 0,
+      "execution_seconds": 4.647,
+      "verification": "execution_failed",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "execute",
+        "verify",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": []
+    },
+    {
+      "id": "c03",
+      "name": "文本字段错误",
+      "policy": "rules",
+      "status": "succeeded",
+      "success": true,
+      "recoverable": true,
+      "attempts": 2,
+      "repairs": 1,
+      "model_calls": 0,
+      "execution_seconds": 3.134,
+      "verification": "threshold_met",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "retrieve",
+        "diagnose",
+        "checkpoint",
+        "patch",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": [
+        [
+          {
+            "key": "text_column",
+            "before": "sentence",
+            "after": "text"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "c04",
+      "name": "非法 min_df",
+      "policy": "none",
+      "status": "failed",
+      "success": false,
+      "recoverable": true,
+      "attempts": 1,
+      "repairs": 0,
+      "model_calls": 0,
+      "execution_seconds": 1.56,
+      "verification": "execution_failed",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": []
+    },
+    {
+      "id": "c04",
+      "name": "非法 min_df",
+      "policy": "retry",
+      "status": "budget_exhausted",
+      "success": false,
+      "recoverable": true,
+      "attempts": 3,
+      "repairs": 0,
+      "model_calls": 0,
+      "execution_seconds": 4.666,
+      "verification": "execution_failed",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "execute",
+        "verify",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": []
+    },
+    {
+      "id": "c04",
+      "name": "非法 min_df",
+      "policy": "rules",
+      "status": "succeeded",
+      "success": true,
+      "recoverable": true,
+      "attempts": 2,
+      "repairs": 1,
+      "model_calls": 0,
+      "execution_seconds": 3.147,
+      "verification": "threshold_met",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "retrieve",
+        "diagnose",
+        "checkpoint",
+        "patch",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": [
+        [
+          {
+            "key": "min_df",
+            "before": 0,
+            "after": 1
+          }
+        ]
+      ]
+    },
+    {
+      "id": "c05",
+      "name": "非法 ngram 范围",
+      "policy": "none",
+      "status": "failed",
+      "success": false,
+      "recoverable": true,
+      "attempts": 1,
+      "repairs": 0,
+      "model_calls": 0,
+      "execution_seconds": 1.532,
+      "verification": "execution_failed",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": []
+    },
+    {
+      "id": "c05",
+      "name": "非法 ngram 范围",
+      "policy": "retry",
+      "status": "budget_exhausted",
+      "success": false,
+      "recoverable": true,
+      "attempts": 3,
+      "repairs": 0,
+      "model_calls": 0,
+      "execution_seconds": 4.769,
+      "verification": "execution_failed",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "execute",
+        "verify",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": []
+    },
+    {
+      "id": "c05",
+      "name": "非法 ngram 范围",
+      "policy": "rules",
+      "status": "succeeded",
+      "success": true,
+      "recoverable": true,
+      "attempts": 2,
+      "repairs": 1,
+      "model_calls": 0,
+      "execution_seconds": 3.197,
+      "verification": "threshold_met",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "retrieve",
+        "diagnose",
+        "checkpoint",
+        "patch",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": [
+        [
+          {
+            "key": "ngram_max",
+            "before": 0,
+            "after": 2
+          }
+        ]
+      ]
+    },
+    {
+      "id": "c06",
+      "name": "未写出指标产物",
+      "policy": "none",
+      "status": "failed",
+      "success": false,
+      "recoverable": true,
+      "attempts": 1,
+      "repairs": 0,
+      "model_calls": 0,
+      "execution_seconds": 1.665,
+      "verification": "artifact_missing",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": []
+    },
+    {
+      "id": "c06",
+      "name": "未写出指标产物",
+      "policy": "retry",
+      "status": "budget_exhausted",
+      "success": false,
+      "recoverable": true,
+      "attempts": 3,
+      "repairs": 0,
+      "model_calls": 0,
+      "execution_seconds": 4.747,
+      "verification": "artifact_missing",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "execute",
+        "verify",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": []
+    },
+    {
+      "id": "c06",
+      "name": "未写出指标产物",
+      "policy": "rules",
+      "status": "succeeded",
+      "success": true,
+      "recoverable": true,
+      "attempts": 2,
+      "repairs": 1,
+      "model_calls": 0,
+      "execution_seconds": 3.424,
+      "verification": "threshold_met",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "retrieve",
+        "diagnose",
+        "checkpoint",
+        "patch",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": [
+        [
+          {
+            "key": "write_results",
+            "before": false,
+            "after": true
+          }
+        ]
+      ]
+    },
+    {
+      "id": "c07",
+      "name": "路径和字段两次连续失败",
+      "policy": "none",
+      "status": "failed",
+      "success": false,
+      "recoverable": true,
+      "attempts": 1,
+      "repairs": 0,
+      "model_calls": 0,
+      "execution_seconds": 1.608,
+      "verification": "execution_failed",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": []
+    },
+    {
+      "id": "c07",
+      "name": "路径和字段两次连续失败",
+      "policy": "retry",
+      "status": "budget_exhausted",
+      "success": false,
+      "recoverable": true,
+      "attempts": 3,
+      "repairs": 0,
+      "model_calls": 0,
+      "execution_seconds": 4.667,
+      "verification": "execution_failed",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "execute",
+        "verify",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": []
+    },
+    {
+      "id": "c07",
+      "name": "路径和字段两次连续失败",
+      "policy": "rules",
+      "status": "succeeded",
+      "success": true,
+      "recoverable": true,
+      "attempts": 3,
+      "repairs": 2,
+      "model_calls": 0,
+      "execution_seconds": 4.842,
+      "verification": "threshold_met",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "retrieve",
+        "diagnose",
+        "checkpoint",
+        "patch",
+        "execute",
+        "verify",
+        "retrieve",
+        "diagnose",
+        "checkpoint",
+        "patch",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": [
+        [
+          {
+            "key": "train_path",
+            "before": "data/missing.json",
+            "after": "data/train.json"
+          }
+        ],
+        [
+          {
+            "key": "text_column",
+            "before": "sentence",
+            "after": "text"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "c08",
+      "name": "恢复权限中没有正确路径",
+      "policy": "none",
+      "status": "failed",
+      "success": false,
+      "recoverable": false,
+      "attempts": 1,
+      "repairs": 0,
+      "model_calls": 0,
+      "execution_seconds": 1.545,
+      "verification": "execution_failed",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": []
+    },
+    {
+      "id": "c08",
+      "name": "恢复权限中没有正确路径",
+      "policy": "retry",
+      "status": "budget_exhausted",
+      "success": false,
+      "recoverable": false,
+      "attempts": 3,
+      "repairs": 0,
+      "model_calls": 0,
+      "execution_seconds": 4.666,
+      "verification": "execution_failed",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "execute",
+        "verify",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": []
+    },
+    {
+      "id": "c08",
+      "name": "恢复权限中没有正确路径",
+      "policy": "rules",
+      "status": "failed",
+      "success": false,
+      "recoverable": false,
+      "attempts": 1,
+      "repairs": 0,
+      "model_calls": 0,
+      "execution_seconds": 1.552,
+      "verification": "execution_failed",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "retrieve",
+        "diagnose",
+        "finish"
+      ],
+      "changes": []
+    },
+    {
+      "id": "c09",
+      "name": "伪造高分但预测错误",
+      "policy": "none",
+      "status": "failed",
+      "success": false,
+      "recoverable": false,
+      "attempts": 1,
+      "repairs": 0,
+      "model_calls": 0,
+      "execution_seconds": 0.085,
+      "verification": "metric_mismatch",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": []
+    },
+    {
+      "id": "c09",
+      "name": "伪造高分但预测错误",
+      "policy": "retry",
+      "status": "budget_exhausted",
+      "success": false,
+      "recoverable": false,
+      "attempts": 3,
+      "repairs": 0,
+      "model_calls": 0,
+      "execution_seconds": 0.256,
+      "verification": "metric_mismatch",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "execute",
+        "verify",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": []
+    },
+    {
+      "id": "c09",
+      "name": "伪造高分但预测错误",
+      "policy": "rules",
+      "status": "failed",
+      "success": false,
+      "recoverable": false,
+      "attempts": 1,
+      "repairs": 0,
+      "model_calls": 0,
+      "execution_seconds": 0.077,
+      "verification": "metric_mismatch",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "retrieve",
+        "diagnose",
+        "finish"
+      ],
+      "changes": []
+    },
+    {
+      "id": "c10",
+      "name": "退出正常但仅有旧产物",
+      "policy": "none",
+      "status": "failed",
+      "success": false,
+      "recoverable": false,
+      "attempts": 1,
+      "repairs": 0,
+      "model_calls": 0,
+      "execution_seconds": 0.048,
+      "verification": "artifact_missing",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": []
+    },
+    {
+      "id": "c10",
+      "name": "退出正常但仅有旧产物",
+      "policy": "retry",
+      "status": "budget_exhausted",
+      "success": false,
+      "recoverable": false,
+      "attempts": 3,
+      "repairs": 0,
+      "model_calls": 0,
+      "execution_seconds": 0.14,
+      "verification": "artifact_missing",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "execute",
+        "verify",
+        "execute",
+        "verify",
+        "finish"
+      ],
+      "changes": []
+    },
+    {
+      "id": "c10",
+      "name": "退出正常但仅有旧产物",
+      "policy": "rules",
+      "status": "failed",
+      "success": false,
+      "recoverable": false,
+      "attempts": 1,
+      "repairs": 0,
+      "model_calls": 0,
+      "execution_seconds": 0.048,
+      "verification": "artifact_missing",
+      "events": [
+        "inspect",
+        "execute",
+        "verify",
+        "retrieve",
+        "diagnose",
+        "finish"
+      ],
+      "changes": []
+    }
+  ]
+}

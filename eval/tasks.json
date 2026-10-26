@@ -1,0 +1,14 @@
+[
+  {"id":"r01","query":"Which Python version and dependencies are required?","source":"environment.md"},
+  {"id":"r02","query":"How much CUDA GPU memory is required?","source":"environment.md"},
+  {"id":"r03","query":"Where should I download and place the sentiment dataset?","source":"dataset.md"},
+  {"id":"r04","query":"What dataset license and validation split should I use?","source":"dataset.md"},
+  {"id":"r05","query":"Where are the pretrained encoder checkpoint weights?","source":"checkpoints.md"},
+  {"id":"r06","query":"How do I verify the weights SHA256 checksum?","source":"checkpoints.md"},
+  {"id":"r07","query":"Should I report macro F1 or accuracy?","source":"evaluation.md"},
+  {"id":"r08","query":"How many random seeds and which standard deviation?","source":"evaluation.md"},
+  {"id":"r09","query":"How do I reduce batch_size after an out of memory error?","source":"troubleshooting.md"},
+  {"id":"r10","query":"What should I do about missing tokenizer assets?","source":"troubleshooting.md"},
+  {"id":"r11","query":"How do I limit the smoke experiment to ten samples?","source":"smoke.md"},
+  {"id":"r12","query":"Where does the smoke run write metrics.json?","source":"smoke.md"}
+]

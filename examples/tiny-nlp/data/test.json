@@ -1,0 +1,8 @@
+[
+  {"id": "s1", "text": "a good and wonderful movie", "label": 1},
+  {"id": "s2", "text": "bad and boring story", "label": 0},
+  {"id": "s3", "text": "I love this great film", "label": 1},
+  {"id": "s4", "text": "I hate this terrible film", "label": 0},
+  {"id": "s5", "text": "excellent acting", "label": 1},
+  {"id": "s6", "text": "an awful experience", "label": 0}
+]

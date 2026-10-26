@@ -1,0 +1,36 @@
+{
+  "$defs": {
+    "JsonValue": {}
+  },
+  "additionalProperties": false,
+  "properties": {
+    "failure_type": {
+      "title": "Failure Type",
+      "type": "string"
+    },
+    "updates": {
+      "additionalProperties": {
+        "$ref": "#/$defs/JsonValue"
+      },
+      "title": "Updates",
+      "type": "object"
+    },
+    "reason": {
+      "title": "Reason",
+      "type": "string"
+    },
+    "citations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Citations",
+      "type": "array"
+    }
+  },
+  "required": [
+    "failure_type",
+    "reason"
+  ],
+  "title": "RecoveryDecision",
+  "type": "object"
+}

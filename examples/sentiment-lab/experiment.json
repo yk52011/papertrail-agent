@@ -1,0 +1,9 @@
+{
+  "command": ["python", "train.py"],
+  "timeout_seconds": 30,
+  "artifact": "results/metrics.json",
+  "ground_truth": "data/test.json",
+  "metric": "macro_f1",
+  "minimum": 0.75,
+  "container_image": "papertrail-nlp:local"
+}

@@ -1,0 +1,60 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "command": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 30,
+      "minItems": 1,
+      "title": "Command",
+      "type": "array"
+    },
+    "timeout_seconds": {
+      "default": 30,
+      "maximum": 120,
+      "minimum": 1,
+      "title": "Timeout Seconds",
+      "type": "integer"
+    },
+    "artifact": {
+      "title": "Artifact",
+      "type": "string"
+    },
+    "metric": {
+      "title": "Metric",
+      "type": "string"
+    },
+    "minimum": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Minimum",
+      "type": "number"
+    },
+    "ground_truth": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Ground Truth"
+    },
+    "container_image": {
+      "default": "python:3.11-slim",
+      "title": "Container Image",
+      "type": "string"
+    }
+  },
+  "required": [
+    "command",
+    "artifact",
+    "metric",
+    "minimum"
+  ],
+  "title": "Experiment",
+  "type": "object"
+}

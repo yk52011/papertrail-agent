@@ -1,0 +1,7 @@
+{
+  "command": ["python", "evaluate.py"],
+  "timeout_seconds": 15,
+  "artifact": "results/metrics.json",
+  "metric": "accuracy",
+  "minimum": 0.8
+}
