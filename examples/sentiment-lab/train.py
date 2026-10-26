@@ -3,17 +3,20 @@
 import json
 from pathlib import Path
 
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, f1_score
-from sklearn.pipeline import make_pipeline
-
 settings = json.loads(Path("config.json").read_text())
 training = json.loads(Path(settings["train_path"]).read_text())
 test = json.loads(Path(settings["test_path"]).read_text())
 column = settings["text_column"]
 train_texts = [row[column] for row in training]
 labels = [row["label"] for row in training]
+
+# Validate inexpensive inputs before importing the ML runtime. Cold imports on some
+# laptops can be slower than the actual small training job.
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, f1_score
+from sklearn.pipeline import make_pipeline
+
 model = make_pipeline(
     TfidfVectorizer(ngram_range=(1, settings["ngram_max"]), min_df=settings["min_df"]),
     LogisticRegression(random_state=42, max_iter=200, class_weight="balanced"),

@@ -1,6 +1,6 @@
 {
   "command": ["python", "train.py"],
-  "timeout_seconds": 30,
+  "timeout_seconds": 120,
   "artifact": "results/metrics.json",
   "ground_truth": "data/test.json",
   "metric": "macro_f1",
